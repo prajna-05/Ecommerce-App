@@ -1,0 +1,162 @@
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f8fc;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #0d47a1; /* Light Navy Blue */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Cart button */
+.cart {
+  background: white;
+  color: #0d47a1;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cart:hover {
+  background: #e3ebfd;
+}
+
+/* Buttons */
+button {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Controls */
+.controls, .filter {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Products Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+/* Product Card */
+.product {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Cart Page */
+.cart-page {
+  max-width: 600px;
+  background: white;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cart-page h2 {
+  text-align: center;
+  color: #0d47a1;
+}
+
+.cart-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-page li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* Back Home Button */
+.back-home {
+  color: white;
+  text-decoration: none;
+  background: #1565c0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.back-home:hover {
+  background: #1976d2;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background-color: #0b1325;
+  color: #f0f0f0;
+}
+
+.dark-mode header {
+  background-color: #1565c0;
+}
+
+.dark-mode .product,
+.dark-mode .cart-page {
+  background: #1b294d;
+  box-shadow: 0 4px 8px rgba(255,255,255,0.05);
+}
+
+.dark-mode .cart {
+  background: #f0f0f0;
+  color: #1565c0;
+}
+
+.dark-mode button {
+  background-color: #1976d2;
+}
+
+.dark-mode button:hover {
+  background-color: #1e88e5;
+}
